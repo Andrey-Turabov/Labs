@@ -46,8 +46,8 @@ int main()
             str[i] += 32;
         }
     }
-
-    string str1= new char[temp*2];
+    
+    char* str1 = new char[temp * 2];
     int j = 0;
 
     for (int i = 0; i < temp; i++)
@@ -58,8 +58,11 @@ int main()
         j++;
     }
 
-
-    cout << str1 << endl;
+    for (int i = 0; i < temp*2; i++)
+    {
+        cout << str1[i];
+    }
+    
     system("pause");
 }
 
