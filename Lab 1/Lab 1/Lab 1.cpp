@@ -32,6 +32,8 @@ int main()
                 str[j] = str[j + 1];
             }
             temp--;
+            i--;
+            break;
         default:
             break;
         }
