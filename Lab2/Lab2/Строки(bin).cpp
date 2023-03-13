@@ -8,7 +8,7 @@ void SortBinary(string *str)
 {
 	string temp;
 
-	for (int i = 0; i < 4; i++)
+	for (int z = 0; z < 4; z++)
 	{
 		for (int i = 0; i < 4; i++)
 		{
@@ -31,6 +31,10 @@ void SortBinary(string *str)
 						str[i + 1] = temp;
 						break;
 					}
+					if (str[i][j] == str[i + 1][j])
+						continue;
+					if (str[i][j] < str[i + 1][j])
+						break;
 				}
 			}
 		}
